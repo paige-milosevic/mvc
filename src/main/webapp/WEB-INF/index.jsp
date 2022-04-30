@@ -25,7 +25,7 @@
 		<c:forEach items="${books}" var="book">
 			<tr>
 				<th><c:out value="${book.id}"></c:out></th>
-				<th><c:out value="${book.title}"></c:out></th>
+				<th> <a href="/books/${book.id}"><c:out value="${book.title}"></a></c:out></th>
 				<th><c:out value="${book.language}"></c:out></th>
 				<th><c:out value="${book.numberOfPages}"></c:out></th>
 			</tr>
